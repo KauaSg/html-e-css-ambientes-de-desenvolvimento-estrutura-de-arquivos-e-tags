@@ -17,7 +17,7 @@ body {
 }
 
 .conteudo {
-    margin: 10%;
+    margin: 10% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,7 +25,10 @@ body {
 
 .conteudo__textos {
     width: 615px;
-    height: 482px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+    /* height: 482px;  */
 }
 
 .conteudo__textos__titulo {
