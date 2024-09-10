@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
 * {
     border: 0;
     padding: 0;
@@ -8,9 +18,26 @@
 body {
     box-sizing: border-box;
     margin: 0%;
-    background-color: black;
-    color: #F6F6F6;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     /* height: 100vh; */
+}
+
+.topo {
+    padding: 2% 0% 0% 15%;
+}
+
+.topo__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.topo__menu__link {
+    font-family: var(--font-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--cor-terciaria);
 }
 
 .conteudo__textos__titulo-destacado {
@@ -18,7 +45,7 @@ body {
 }
 
 .conteudo {
-    margin: 8% 15%;
+    margin: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,12 +61,12 @@ body {
 
 .conteudo__textos__titulo {
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-primaria);
 }
 
 .conteudo__textos__paragrafo {
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-secundaria);
     font-weight: 400;
 
 }
@@ -60,33 +87,33 @@ body {
     font-weight: 600;
     gap: 16px;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 24px;
     border-radius: 8px;
     padding: 21.5px 0;
-    color: #F6F6F6;
+    color: var(--cor-secundaria);
     display: flex;
     justify-content: center;
-    border: 2px solid #22D4FD;
+    border: 2px solid var(--cor-terciaria);
 }
 
 .conteudo__textos__botoes__desing:hover{
-    background-color: #272727;
+    background-color: var(--cor-hover);
 }
 
 .conteudo__textos__botoes__texto {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-primaria);
     font-size: 24px;
 }
 
 .footer {
-    background-color: #22D4FD;
+    background-color: var(--cor-terciaria);
     height: 80px;
 }
 
 .footer__texto {
     color: #000000;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-secundaria);
     text-align: center;
     font-size: 24px;
     padding: 24px;
